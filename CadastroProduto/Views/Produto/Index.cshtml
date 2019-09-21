@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    .erro {
+        border-color: red;
+    }
+</style>
+
+<div class="container">
+    <h2>Produtos</h2>
+    <div class="col-md-12">
+        <label>Informe a descição do produto</label>
+        <input class="form-control" id="descricao" />
+        <label>Informe o valor do produto</label>
+        <input class="form-control" id="valor" />
+        <button class="btn btn-success" id="salvar">Salvar</button>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                </tr>
+            </thead>
+            <tbody id="corpo">
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<script src="~/js/Produto/Index.js"></script>
